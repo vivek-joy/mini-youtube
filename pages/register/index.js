@@ -3,14 +3,8 @@ import css from "../../sass/pages/login.module.scss";
 import Input from "../../components/shared/Input";
 import Button from "../../components/shared/Button";
 import Link from "next/link";
-const Login = (props) => {
-  const settings = {
-    dots: true,
-    infinite: true,
-    speed: 500,
-    slidesToShow: 1,
-    slidesToScroll: 1,
-  };
+
+const Register = (props) => {
   return (
     <div className={`${css["body-container"]}`}>
       <div className={css["left-container"]}>
@@ -41,14 +35,14 @@ const Login = (props) => {
             type="password"
           />
 
-          <Button type="submit">Sign In</Button>
+          <Button type="submit">Sign Up</Button>
         </form>
 
         <small className={css["description"]}>
-          Dont have an account?{" "}
+          Already have an account?
           <span>
-            <Link href="/register">
-              <a className="text-link">Sign Up</a>
+            <Link href="/login">
+              <a className="text-link">Sign In</a>
             </Link>
           </span>
         </small>
@@ -70,4 +64,4 @@ const Login = (props) => {
   );
 };
 
-export default Login;
+export default Register;
