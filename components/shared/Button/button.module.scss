@@ -1,0 +1,19 @@
+@import "../../../sass/partials/variables";
+
+.button {
+  cursor: pointer;
+  height: 40px;
+  width: 100%;
+  background-color: $secondary-color;
+  color: $danger;
+  outline: none;
+  //   max-width: 400px;
+  margin-top: 8px;
+
+  border: 1px solid $danger;
+
+  &:hover {
+    background-color: $danger;
+    color: $white;
+  }
+}
