@@ -8,8 +8,6 @@
     "next": "latest",
     "react": "^16.7.0",
     "react-dom": "^16.7.0",
-    "react-slick": "^0.26.1",
-    "sass": "1.26.3",
-    "slick-carousel": "^1.8.1"
+    "sass": "1.26.3"
   }
 }

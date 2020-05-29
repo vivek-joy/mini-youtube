@@ -1,6 +1,5 @@
 import React from "react";
 import css from "../../sass/pages/login.module.scss";
-import Slider from "react-slick";
 
 const Login = (props) => {
   const settings = {
