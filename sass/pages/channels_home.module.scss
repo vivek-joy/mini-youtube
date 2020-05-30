@@ -1,0 +1,69 @@
+@import "../partials/variables";
+
+.channels-container {
+  h4 {
+    color: $white;
+    margin-bottom: 16px;
+  }
+
+  .channels-item-container {
+    // cursor: pointer;
+    display: grid;
+    width: 100%;
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
+    grid-template-columns: auto auto auto auto;
+    position: relative;
+  }
+
+  .channels-item {
+    position: relative;
+    background-color: $secondary-color;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 12px;
+    z-index: 1;
+    box-shadow: 0px 4px 10px 4px rgba($color: #000000, $alpha: 0.3);
+    transition: box-shadow 0.2s;
+    &:hover {
+      background-color: lighten($color: $secondary-color, $amount: 2);
+      box-shadow: 0px 1px 2px 1px rgba($color: #000000, $alpha: 0.8);
+    }
+    img {
+      width: 60px;
+      height: 60px;
+      border-radius: 30px;
+    }
+
+    .subscribe-btn {
+      font-size: 11px;
+      height: 20px;
+      margin-bottom: 8px;
+    }
+
+    h5 {
+      cursor: pointer;
+      color: $white;
+      font-size: 11px;
+      margin-bottom: 2px;
+    }
+
+    small {
+      color: #aaa;
+      font-size: 11px;
+    }
+  }
+  @media only screen and (max-width: 1200px) {
+    .channels-item-container {
+      grid-template-columns: auto auto;
+    }
+  }
+
+  @media only screen and (max-width: 768px) {
+    .channels-item-container {
+      grid-template-columns: auto;
+    }
+  }
+}
