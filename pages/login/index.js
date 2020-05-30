@@ -15,7 +15,7 @@ const Login = (props) => {
     <div className={`${css["body-container"]}`}>
       <div className={css["left-container"]}>
         <div>
-          <div className={css["logo"]}>MY</div>
+          <div className="logo">MY</div>
           <h4 className={css["heading"]}>Welcome to Mini YT</h4>
           <small className={css["description"]}>
             Find videos related to <span>coding and programming</span>
@@ -27,21 +27,25 @@ const Login = (props) => {
           onSubmit={(e) => e.preventDefault()}
           className={css["login-form"]}
         >
-          <Input
-            label="Email Address"
-            name="email"
-            placeholder="Enter email address"
-            type="email-address"
-          />
-
-          <Input
-            label="Password"
-            name="password"
-            placeholder="Password"
-            type="password"
-          />
-
-          <Button type="submit">Sign In</Button>
+          <div style={{ marginBottom: 16, width: "100%" }}>
+            <Input
+              label="Email Address"
+              name="email"
+              placeholder="Enter email address"
+              type="email-address"
+            />
+          </div>
+          <div style={{ marginBottom: 16, width: "100%" }}>
+            <Input
+              label="Password"
+              name="password"
+              placeholder="Password"
+              type="password"
+            />
+          </div>
+          <Link href="/">
+            <Button type="submit">Sign In</Button>
+          </Link>
         </form>
 
         <small className={css["description"]}>
@@ -69,5 +73,7 @@ const Login = (props) => {
     </div>
   );
 };
+
+Login.Layout = React.Fragment;
 
 export default Login;

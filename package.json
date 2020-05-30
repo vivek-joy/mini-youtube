@@ -6,8 +6,13 @@
   },
   "dependencies": {
     "next": "latest",
+    "next-images": "^1.4.0",
     "react": "^16.7.0",
     "react-dom": "^16.7.0",
-    "sass": "1.26.3"
+    "react-id-swiper": "^3.0.0",
+    "react-multi-carousel": "^2.5.5",
+    "react-responsive-carousel": "^3.2.7",
+    "sass": "1.26.3",
+    "swiper": "^5.4.1"
   }
 }
