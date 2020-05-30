@@ -1,0 +1,59 @@
+@import "../../sass/partials/variables";
+
+.carousel-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: $secondary-color;
+  margin-top: 16px;
+  height: 130px !important;
+  min-width: 100px;
+  & img {
+    width: 50px;
+    height: 50px;
+    border-radius: 25px;
+    margin-bottom: 12px;
+  }
+
+  & h5 {
+    font-size: 12px;
+    margin-bottom: 4px;
+  }
+
+  & small {
+    font-size: 10px;
+    color: $danger;
+    font-weight: 700;
+  }
+}
+
+.arrow-prev,
+.arrow-next {
+  cursor: pointer;
+  position: absolute;
+  top: 45%;
+  z-index: 1;
+  width: 24px;
+  height: 24px;
+  font-size: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  border-radius: 12px;
+  background-color: lighten($color: $secondary-color, $amount: 10);
+  box-shadow: 1px 1px 4px 1px rgba(0, 0, 0, 0.6);
+  font-weight: bold;
+
+  &:hover {
+    background-color: lighten($color: $secondary-color, $amount: 30);
+  }
+}
+
+.arrow-prev {
+  left: 8px;
+}
+.arrow-next {
+  right: 8px;
+}

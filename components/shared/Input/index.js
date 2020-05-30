@@ -1,7 +1,7 @@
 import css from "./input.module.scss";
 
 const Input = (props) => {
-  const { label, className, ...rest } = props;
+  const { label, className, inputClass, ...rest } = props;
   return (
     <div className={css["input-container"]}>
       {label && (
@@ -9,7 +9,14 @@ const Input = (props) => {
           {label}
         </label>
       )}
-      <input className={className ? className : css["input"]} {...rest} />
+      <input
+        className={
+          className
+            ? className
+            : `${css["input"]} ${inputClass ? inputClass : ""}`
+        }
+        {...rest}
+      />
     </div>
   );
 };
