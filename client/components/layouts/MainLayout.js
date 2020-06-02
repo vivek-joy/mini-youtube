@@ -1,16 +1,22 @@
-import AppBar from "./AppBar";
-import SideMenu from "./SideMenu";
+import PropTypes from 'prop-types';
+import AppBar from './AppBar';
+import SideMenu from './SideMenu';
 
 const MainLayout = (props) => {
+  const { children } = props;
   return (
     <>
       <AppBar />
-      <div style={{ marginTop: "54px" }}>
+      <div style={{ marginTop: '54px' }}>
         <SideMenu />
-        <div className="main-container">{props.children}</div>
+        <div className="main-container">{children}</div>
       </div>
     </>
   );
+};
+
+MainLayout.propTypes = {
+  children: PropTypes.element.isRequired,
 };
 
 export default MainLayout;
