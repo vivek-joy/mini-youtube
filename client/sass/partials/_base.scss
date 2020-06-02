@@ -13,8 +13,12 @@ body {
 
 .text-link {
   text-decoration: none;
-  color: inherit;
+  color: $danger;
   cursor: pointer;
+  font-size: 14px;
+  font-weight: 700;
+  background: transparent;
+  border: none;
 }
 
 .text-link:hover {
